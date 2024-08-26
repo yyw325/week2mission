@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*盒模型*/
+*, *::before, *::after  {
+    box-sizing: border-box;
+}
+/*圖片設定*/
+img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle/*基準線對齊*/;
+}
+/*通用設定*/  
+p,a,h1,h2,h3{
+    font-family: "Bruno Ace SC";
+    line-height: 1.5;
+    color: #000000;
+}
+.h1{
+    font-size: 128px;
+}
+.h2{
+    font-size: 64px;
+}
+.fs-1{
+    font-size: 24px;
+}
+.fs-2{
+    font-size: 20px;
+}
+.fs-3{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+.bg-black{
+    background-color: #000000;
+}
+.bg-white{
+    background-color: #FFFFFF;
+}
+.text-white{
+    color: #FFFFFF;
+}
+.text-green{
+    color: #00FFA3;
+}
+.tar{
+    text-align: right;
+}
+/*
+.w50{
+    width: 50%;
+}
+*/
+
+/*自訂設定*/
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.flexbox{
+    display: flexbox;
+}
+.flex-d-column{
+    flex-direction: column;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: start;
+}
+.d-inline{
+    display: inline;
+}
+.d-inline-block{
+    display: inline-block;
+}
+/*menu*/
+.menu{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*profile*/
+.profile-img{
+    padding-top: 72px;
+    padding-bottom: 32px;
+    padding-right: 24px;
+    max-width: 50%;
+}
+.profile-text{
+    margin-top: 232px;
+    max-width: 50%;
+}
+.button1{
+    display: inline-block;
+    border-radius: 32px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.btn-arrow{
+    display: inline-block;
+    padding-right: 24px;
+}
+/*intro*/
+.intro{
+    background-image: url(/images/background-img.png);
+}
+.intro-text{
+    max-width: 526px;
+    margin-right: 24px;
+    padding-top: 160px;
+}
+.intro-text h2{
+    margin-bottom: 36px;
+}
+.intro-text p{
+    margin-bottom: 32px;
+}
+.intro-text li{
+    margin-right: 16px;
+}
+.intro-img{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.intro-img ul{
+    gap: 24px;
+}
+/*about*/
+.about-list{
+    width: 636px;
+    
+}
+.about-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.about-list li{
+    border: 1px solid #E3E3E3;
+    width: 306px;
+    padding: 16px;   
+}
+.about-text{
+    max-width: 526px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.about-text h2{
+    margin-bottom: 36px;
+}
+/*contact*/
+.contact{
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.contact-text h2{
+    margin-right: 16px;
+}
+.contact-icon{
+    width: 526px;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+.social-icon{
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 4px 4px 8px 0px #00000014;
+}
+.social-icon:hover{
+    box-shadow: 0px 0px 16px 3px #9094FFE5;
+}
+.contact-icon ul{
+    gap: 20px;
+}
+/*project*/
+.project-title{
+    margin-bottom: 16px;
+    width: 746px;
+    margin-left: auto;
+    padding-top: 160px;
+}
+.project-img{
+    padding-bottom: 160px;
+}
+.project-img-l{
+    width: 416px;
+    margin-right: 24px;
+}
+.project-img-r{
+    width: 66.6%;
+}
+.project-img-t{
+    margin-bottom: 28px;
+    gap: 24px;
+}
+.project-img-b{
+    gap: 24px;
+}
+/*footer*/
+.footer{
+    background-color: #000000;
+    text-align: center;
+}
+.footer-text{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
